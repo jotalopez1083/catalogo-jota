@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo Jota Importados — Gafas 2025</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#F0E6D3}
+.hdr{background:#5C3D2E;padding:18px 28px;display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid #C0603A;position:sticky;top:0;z-index:100}
+.logo{display:flex;align-items:center;gap:16px}
+.logo-icon{background:#C0603A;width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.marca{font-family:Georgia,serif;font-size:28px;color:#F5ECD7;letter-spacing:3px;line-height:1;font-weight:700}
+.subtag{font-family:Georgia,serif;font-size:11px;color:#C0A882;letter-spacing:6px;margin-top:3px}
+.hdr-r{text-align:right}
+.hdr-tel{font-size:14px;font-weight:700;color:#F5ECD7;display:flex;align-items:center;gap:7px;justify-content:flex-end}
+.wa-icon{width:17px;height:17px;flex-shrink:0}
+.hdr-sub{font-size:10px;color:#C0A882;margin-top:4px}
+.barra{padding:12px 28px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;background:#FDF6EC;border-bottom:1px solid #E2D0B4;position:sticky;top:89px;z-index:99}
+.barra label{font-size:12px;color:#7A5C45;font-weight:600}
+.barra select{font-size:12px;padding:5px 10px;border-radius:6px;border:1px solid #C0A882;background:#FDF6EC;color:#3B2A1E;cursor:pointer}
+.stats{font-size:12px;color:#7A5C45;display:flex;gap:16px;margin-left:8px}
+.stats b{color:#5C3D2E}
+.ok{color:#4A7C59}.no{color:#A0392A}
+.sec{padding:12px 20px 0}
+.sec-hdr{background:#8B5E3C;color:#FDF6EC;padding:8px 16px;font-size:12px;font-weight:700;letter-spacing:1.5px;border-radius:5px 5px 0 0;display:flex;justify-content:space-between;align-items:center}
+.sec-hdr span{color:#C0A882;font-size:10px;font-weight:400;letter-spacing:1px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:10px;padding:10px;background:#FDF6EC;border:1px solid #E2D0B4;border-radius:0 0 5px 5px;margin-bottom:14px}
+.card{background:#FFFDF8;border:1px solid #E2D0B4;border-radius:9px;overflow:hidden;transition:border-color .2s,transform .15s}
+.card:hover{border-color:#C0603A;transform:translateY(-2px)}
+.card.agotado{opacity:.55}
+.card img{width:100%;height:130px;object-fit:contain;background:#F5ECD7;padding:8px;display:block}
+.card-body{padding:8px 9px 10px}
+.card-nombre{font-size:11.5px;font-weight:700;color:#3B2A1E;line-height:1.3}
+.card-cod{font-size:10px;color:#7A5C45;margin-top:3px;font-family:'Courier New',monospace}
+.badge{display:inline-block;font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px;margin-top:5px}
+.badge-ok{background:#E8F0EB;color:#2E5C3A}
+.badge-no{background:#F5E8E5;color:#7A2A1E}
+.footer{background:#5C3D2E;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;margin-top:6px;border-top:3px solid #C0603A}
+.footer-logo{display:flex;align-items:center;gap:14px}
+.footer-icon{background:#C0603A;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.footer-marca{font-family:Georgia,serif;font-size:17px;color:#F5ECD7;letter-spacing:2px;font-weight:700}
+.footer-sub{font-size:9px;color:#C0A882;letter-spacing:4px;margin-top:2px}
+.footer-r{text-align:right;font-size:11px;color:#C0A882;line-height:2}
+.footer-r b{color:#F5ECD7}
+@media print{.barra{display:none}.hdr{position:static}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="logo">
+    <div class="logo-icon">
+      <svg width="32" height="32" viewBox="0 0 30 30" fill="none">
+        <ellipse cx="15" cy="15" rx="12" ry="8" stroke="#FDF6EC" stroke-width="2"/>
+        <line x1="15" y1="3" x2="15" y2="27" stroke="#FDF6EC" stroke-width="1.8"/>
+        <line x1="5" y1="9" x2="25" y2="9" stroke="#FDF6EC" stroke-width="1.1"/>
+        <line x1="5" y1="21" x2="25" y2="21" stroke="#FDF6EC" stroke-width="1.1"/>
+      </svg>
+    </div>
+    <div>
+      <div class="marca">JOTA</div>
+      <div class="subtag">IMPORTADOS</div>
+    </div>
+  </div>
+  <div class="hdr-r">
+    <div class="hdr-tel">
+      <svg class="wa-icon" viewBox="0 0 24 24" fill="#25D366">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      WhatsApp 11 6291-5656
+    </div>
+    <div class="hdr-sub">Consultas y pedidos</div>
+  </div>
+</div>
+
+<div class="barra">
+  <label>Línea:</label>
+  <select id="fLinea" onchange="render()"><option value="">Todas las líneas</option></select>
+  <label>Stock:</label>
+  <select id="fStock" onchange="render()">
+    <option value="">Todo</option>
+    <option value="ok">Solo en stock ✅</option>
+    <option value="no">Solo sin stock ❌</option>
+  </select>
+  <div class="stats" id="stats"></div>
+</div>
+
+<div id="cat"></div>
+
+<div class="footer">
+  <div class="footer-logo">
+    <div class="footer-icon">
+      <svg width="22" height="22" viewBox="0 0 30 30" fill="none">
+        <ellipse cx="15" cy="15" rx="12" ry="8" stroke="#FDF6EC" stroke-width="2"/>
+        <line x1="15" y1="3" x2="15" y2="27" stroke="#FDF6EC" stroke-width="1.8"/>
+        <line x1="5" y1="9" x2="25" y2="9" stroke="#FDF6EC" stroke-width="1.1"/>
+        <line x1="5" y1="21" x2="25" y2="21" stroke="#FDF6EC" stroke-width="1.1"/>
+      </svg>
+    </div>
+    <div>
+      <div class="footer-marca">JOTA</div>
+      <div class="footer-sub">IMPORTADOS</div>
+    </div>
+  </div>
+  <div class="footer-r">
+    <b>WhatsApp 11 6291-5656</b><br>
+    Gafas &amp; Anteojos Premium · Catálogo 2025<br>
+    ✅ En stock: entrega inmediata &nbsp;·&nbsp; ❌ Sin stock: consultar disponibilidad
+  </div>
+</div>
+
+<script>
+const P=[
+  ["Amore Fashion","Carey/Marrón Degradé","4390 710/13",false,"APaQ0SRoUuqNwu9s6fzCRIvYdoYbKQ-YWTYlp1oWUIFUgpFigRaaD3CZETXol1MaIw4kqx4Z4O3FNlddR-kk985vFpuNj5nvwudA89LayIrAGTx3x3qqr1ClcypWh-zrWPnosiBbEUrD1lbtcKcrRlfv5QDACuvyBHmxVkj-VI1InyZJdQ6Z5qlX4go6xTnxeuKlv5Wj-votpQNjTxo_OHFzCdpqTvnWwVdZV7O1"],
+  ["Amore Fashion","Carey/Marrón Liso","4390 601S/3L",true,"APaQ0SQ0I_y8fJ625DmYlDKx4qlNmlc1sLK1P9uyvL9mGHbWqMkkZtRJ3r0R35Pb6ibQRYcUajeSPHdyPCUOqKsh82m50wJdnzgLd-31c-NV64fpQAb_Ty3AJhd0T3T7Gd8GUjzPsxNNJMUOyAW1B3H1bGHOP2-rG2qFxKwzob2xH7G5hLjU-ApJ1Svh6BOmoVQXhiRPjmotM9qh71c2L3q38EFZQe66tsJMN_yw"],
+  ["Amore Fashion","Negro/Verde","4390 601S/71",false,"APaQ0SSFkNT0xHU7OmeyVBfExGu57aHp9VGClvCihd3ZMPZJKCubV8D2yQBJKNGSQ5L-7HOFjeefuSd_3DW7-HYH6orsWU0Ku-Ki9M3wHeosCcjqVFodhB7z0nSGxPt0TqOJD7k9U9nS6W0usZ1YjR_6pOwypdMWkVOeu_-PiwbaJhLwXfPo78vkx9dQnBemg7B9mPUO5RfNPM_ZpfxxWF0J0SYvdyDF5rNfkYeQ5p8"],
+  ["Amore Fashion","Negro/Violeta Degradé","4390 601S/9A",true,"APaQ0SRuuIG1ziYMwbSAohYDvGuOg5OQ7PomM_URdCX1ucVun2FoBuPJdxXrYBcxXBmqNQ3eOWPoC5zXdyRIVr396wrZSyorliBvoXwphp5POM40q6sXRsmEl9RDm9rIY1zeQV3HX6PnVdH42oSZRPOE-aPq5A8IW-q7YeNaoaONosr8_12Za6M9pcI8Jepw4L6xyzDq4gqVGhYcCKSIi7xOWFduldRtIdmH5JDdBss"],
+  ["Amore Fashion","Rosa/Espejado","4390 601S/Z2",true,"APaQ0SSThKUg_zrKNfaWqUX9CdejVPo1pK7m1fPew7lq-G10csRmsjx7eBiadsyGnGaOFgDeXv5k1_FpTBC08gDe4AK66UMpCDXTYUE7-P6ccvUIREpgD8DhJjnEF_EH1KS2P-hfmtfQARAslj-oQdrY0dA1Emc8GqNOWVQbAZVgQYY-docz0m3V21a8hNovn_V1_p74jEl8E-J2rcFTJ9oTwQdIWb-92RyhNJfSk_c"],
+  ["Asian Fit","Carey/Marrón Degradé","4379 710/13",true,"APaQ0STW_j3f0EkgYoHBkfJ4n-etUkU0k1rq2kqpUyk2k4f9UrNd_RWlRx99a3zqOojYaeJU2TFOCvJn2TFiL9_zepE4ApFig0IoQg3VIjph7Dhee_fnFVDHwGr5-MKm7G8IOtZYO45ArUPAc6yfZN0yfG8YZM6Kr-ahe9Rs2gVP6rghaHfJ_tqJb8kmvFp3RF1D8vm6xJP2tgO3inBQcN18LATX3s-9yYH7QaAKtE8"],
+  ["Asian Fit","Negro/Gris Transparente","4379 6599/87",true,"APaQ0SQhVTXWfn4eCifTMYbD2kuU--A3OUYbnpCCO1eliwyoW3KGlEMpxLSa9Q0sKosJ2z6CSTtyXyN3PvlEQEmYfdNCNBVCil-Hn2cJJtMr_kONri6gIdoA6ereUpFJ5LnXHhbtqi3x9mqNt1XF_I91tF8gUXO5yUX3NFrP4VBjPUe0hhIpLBBGPtnsl268dc0LyUpcXMBa_Kpv-hBwIchvm6FEcuM8S0ANG0Sqj50"],
+  ["Asian Fit","Negro/Rosa Transparente","4379 6602/Q5",true,"APaQ0STuLOIbQ-vYaHU7sdC1Wp86eKyHmL1TVWX0tHJAS7zlhPNQWbT2gI-zGsIQwLwd1VwlNMqKyRkkZvRHLurSrNMRt49yBZR5OUp9e6fD49jYonVn-5_A5irN7Hmv-nQhrjM1YxMjrHlf8uP2LxXMWIIhtGA7Q4HNrlEgG6QDdnzATpI9vZNj00CRuY1s8RVD6Psz8-wsSq1BSEmIAWEy2Vaxnl54kX3IqnWzPFM"],
+  ["Asian Fit","Negro","4379 601/8G",true,"APaQ0SQ6p4pP_Rzz-FOa3qdkdxwZGE0BJsr5jEeiqJhtH8lLUPu6z0mwqk1iP3jWh8XX5B_afMwd-JeZ1rygNyUc2Fl1LresBmtMpZ8az2SUJZ31uux6TvkJ6TeJ-I-OqjpYDICS65KUHD1o2X-Fcw_Jo3aiGXGKT70FYA5fcH09_QTxWZUvCZE9JKT7GjMMN9DQcMYl9JfmnC-KDfHISgH6rtoJq-iYAk9NUN3V5UM"],
+  ["Asian Fit","Rojo/Gris Transparente","4379 6572/2V",true,"APaQ0SR9slezZHhIpG2MitrjGMCStmrFtF32GTYRibVwF4oB3rHcEsLM0fFw80XiiQiTB8z0FKDWXlV5s_0-3znoUf5NMHOC6wVnTIai5ZiKhQdNu7hOY9oz50ySj0HS0FP4xVL10zonhfAGrbU3Jdxsj9un22n6z4-ltGRsBB3gWhBeS3uXbRo_F8tLSczmkKYQgWF5yLI-pknCLUDuyk_RE4ogAu-8m60x1rLa"],
+  ["Aviador Clásico","Dorado/Azul Degradé","3025 001/3F",false,"APaQ0SS0BaPEowvB9aagEHE9lyfnodw734zXaflGcamd4MONhwURrIdgKIfBL4es1L5WD_LeyDzt2RvAxWBglzu3WbjESXAJbbkkmpPbpNqqRA4-9UhpU6cVhufTZQSjsY5YsZe-NPqvPvqlgTZsHDCjflSkvAD-KbrumL2MiNQhGWz4SsJWfMyNJT5-Ib8vNxDrJgDN05sZ2Ihkth-HesXh9FRW_fnMNJhcojgc99E"],
+  ["Aviador Clásico","Dorado/Marrón","3025 001/33",true,"APaQ0SSS3BwlANoqoBS2pMlwCbXjHhNuH3lWLGqjl45aKdfgdo2RIE-UnaAKytD0b8f1Vn_rauArdigt-oih14B9j9ywjD_tERatvmi3jvKDdV4W5ikdEgBVcl4Ms2n84_ED1hUB3ME8iCBPsWh3K3UTUrd2xJxNiN8nVQDtlemNcBKtZe89gOR6sSvSogWNlcbd-jRi_OAylWMErMaBkvF4UfR6HwlN3Ys7oTvj"],
+  ["Aviador Clásico","Negro/Azul Degradé","3025 002/3F",true,"APaQ0ST-kKcQX4VE33BVFPLYKCxds6MDWqWXuUy5_-wrs3tLMsbYkGLYagCq9xqbB8gu6spwvBnSQy4HXFEsYzdXNF2n-27L-t_qb_AmbtU8oNtgyYSZa6-K-s9oZp1vFthUwpCI1JXy4MFTZXheXP_EBXQuJ5cEhttvTU6fvt3bavKFe4_q3H7h0J3IEfcTDUC9XKsOfDNUIQqS8E-dKdAVwxDe-bThoBSMt_Gw"],
+  ["Aviador Clásico","Negro/Verde","3025 L823",true,"APaQ0STX7SsHIvw5AZwxp5hW7cQXGaDx1pFBJ2umtSm3pjflYNY7OvETbndQaL46UeOQVKfJm3sg1NgGyVMFQA1xAqW9Ugk8mX9J_mz4iRov-5HZLN5CzqbgVHhlAXWpfmxQQHfsinOOhsblkec5xHS4v0bQrmpQu9g-yK3DIolZmMnjESLWoVY9jJJ35R1II0TBFyixZEK9wKXOf4lvO8w4wTAbTTXZBaPNufzHrAE"],
+  ["Aviador Polarizado","Dorado/Marrón","3025 001/57",true,"APaQ0SQ3r1Hcx9Z09Gldo4YGlGUGai5B7BEJiN8hvLQ9Zf6xyY4viKZWE2g50yImpO0v07Qa02e9oW8tlFXeZbzha0vIAOrA96XOffY-ErHPq5hqqtK-GSrQDEO0iShxVMkkLBOVjynxum7mLUoGllzzm4e1A1IDn54S1c9RYWADx5A_Ab0KLB2IeJ6OZG5qv--ej9_jiSSi-Hr1LqvPy9FoKHTrU5uc6-vA6u6g"],
+  ["Aviador Envolvente","Dorado/Marrón","3030 001/33",true,"APaQ0SRv7zXak_gCoA4EGlVf3k3T9Y6UnKlr2ErUaAg8xjpBzwPn8AQh8nBSIHdU8O8oBWTEVGibLFdkhZXxkVv_Utq5g0hBoMhRiErSt_38Xl0E97FpyryDVZnSU_zFlYttcEERIjhJTmYfbvpLXJueK0xrV--8B9tV1X90KNtK-6wnA1V7WhpZ202Iga3MryRsjoqAoT-r4WrC4-9iamJGrXb_o_U50FuIN8MghyM"],
+  ["Aviador Folding","Dorado/Marrón","3479 001/51",false,"APaQ0SSBSOYHwJ41Hoo2x232Fvy1d4GslxZv0c-q8IGdV88FH_HCuiu2doxBhFQWMpwmRV2400NUQM9KBhNyM1HyncC2OY9C_zE1W38cS30YNqfOHnw_0Hv_m7xUqNE7dGS15Q8w5c815QrTN2D006fdrNonw7RZjP0ZBrYmfJPljt7yu6L4LfJK0wvgb-gRzxbdQ_LVM6HXhsh86cvff3RkyJ-ArjgAenCIi9Zr"],
+  ["Bill","Carey/Marrón Degradé","2198 1292/51",true,"APaQ0SRog_IHXLcIttRpCp9vxbzrAWcD0xCcWGnvcc_Ty1S8EvKGo2GYve6VYBbaRYy1mqaJpGgBwTdmKLIyNeEWQ9fdK7BpAtfbWhBm_FF8XSw_qSpvXZSTdmo6pAeNgbiOdeY-2ti9_-GvutF70So18Dd1jLTjWaxgEdBZM4SQe9X0odumgM1bOTGN7TfMu8srOi9-D6_eXJ7wB5193S-5iPfu38e-XWWvLf29cOU"],
+  ["Bill","Carey/Marrón","2198 954/33",true,"APaQ0SQnPoVUodHKR4gAjDVGGVaGGDpPk2_2-NG_lj1CjRZHjawIi_3PGNdiZEq8-1bVJJqZFh7-F2hx_G58fHlBroKU5zKY1ayopVFMgofYjqzlT-TuWCjQaLr5tOo72fleRwgpyUNPI7z0JFROCXSdv85sq8_pTbXe_URMzVAaXTuoOFcbgn5wruNjxHDa4tOS67WUPJmAuxlIRqzCApkgA280ojAycGmrRKXxsIw"],
+  ["Bill","Negro/Verde","2198 901/31",true,"APaQ0SR2PdM6UHaAV8RpQObaKL30_agmD6EhDuEtfHUePucNkTRuwbhbacfnYZAo1uO1paglmu4lRhJjvmS7XG7trnfHEMug2rNo4cAXv08TO4-XutTsP7nw432XXLlfJk8YkFJNhsoBOaq5N58_imIseFRxZnHZ266CtzmLrTMkD7ncPA9p8Tf_DP6CgabVTw33ueGnnIbKdGGJ7Zh_O2MkqL67g_p3fYQnblnB"],
+  ["Bill","Transparente/Negro","2198 1314/B1",false,"APaQ0SRqww-0DTiuaIzRzD0zjGygb-pyFq_yyTPjF_hMd5iI2orX4bYIOvZKLs70YgUR6SAFmLkarfHGVMAL62JupOAVEHCxO1buD3XJxUN_VDRPHUUsdb4lscKADSWP7EN-vp0KVgMRUX9Sm75w1pGrQfktURLHBw7XCO2N-ApMbn52RSqZQHFhlMx6FV65LLXbPlGfJPCgImpDZBoMchlFjdr0aP62n67SgNGS"],
+  ["Bill","Carey Oscuro/Marrón Degradé","2198 902/51",true,"APaQ0SRK_8k1JX63XrBrcH-B_OzNmq45escE9uUIGkCPDfVq6Hclknu-W7Ph8UjpYWuWpdZDPF964c1gRnmfRrmSEcnGarzTCd_D1fNLOPt0Q86raWUCA9RIgVMXu2nvLUEac4g_VTj_rKAXcVbcfBh3Y8WbPdz-W4qzQEHdbuQEhSW0sLBa4Bm4Pqk1DjoXc39Tr-2ZgfMzaw1ds2aM78tHKfs-hf7g8mF9Oyaw"],
+  ["Blair","Negro/Verde","2196 901/13",true,"APaQ0SRS__0WA8DJ8L9S2evo6wHxMPfTGksD8B7Gj_GCyaMMgNGEfhvrWV4VhMpntz-sy2L5RVdio1aIZLlQctOfmy5Lpovf9YHgvkK2wrV0Kq5nGXx2t3cXEjPAOIBom0btOJkuMwjBhogGPTnQyjBZ0JFU7yd-8dJkwaeP6JuWNlEU57UJlo1__jbd9NxsaRxUKT8eDYvMzDalLNuRonUIEWEASGxoXz9rcqWLblU"],
+  ["Blair","Carey/Verde","2196 902/13",false,"APaQ0SQZbbXdHu_ZbW8ctBh8NxPrBlF9PiZAk7zI3LiZm_aAbhmvR2B_oo-wwM8ObNjG4uu530kDOhp0-3f1hIBZwdlb5EnMOCtDfBffrD1WawE7eQqFdHyRZLsjwDwmPIygMw8h4cUSsgbFMjZjbVW8ifFf6ZkiVDj7DPi-Gx9X3XOSWfKrF4CfTETodrSutiTIpgGvtyrKYV7CXgdNI33D6M9AgfekTCSSDmGV"],
+  ["Chris","Carey/Marrón Degradé Pol.","4187 856/13",true,"APaQ0SSzuMmeqpGuIHp8NL9LO8qofkMEXYgs-L-grYRCB1s-qC65pk-elwL2dQMsBUu16HwZgqzH3YnGOvd_UhurBdxTL0rBQPyIiIpjlmDMK_fFP5O8sQiqDo8MdQZWMen7hUCxcYSb9UQSIUV7rxtV7gLa2HTt17VtRsqLJYGBFlr_YpwwDDp1UpuL4ytyXKrgX-HnwQyUnLymFke5Gu95PEjos3ex4gxmF6aiwUM"],
+  ["Chris","Negro/Azul Espejado","4187 622/17",true,"APaQ0SQupFVnejrGS60ye5-loUPhGWHIWDY1Gmha3tGN4ea6GS5F2V86jdvxgwwtg1wKjv32tgwsH8d6OwE5l39MeP0EQ5lFNh3uJxd4Kod8kq6RrBGBXX9n7EFbEjtnTVndHoWss8KaxJ95F2AQozgUjWia7zbRlc97Q7ZNypisUeDlB10f80MZ786t52_RHtPxMNpAVY7ExtUlupwdjGBYSh4_Au7NXCQ_n5GMhpM"],
+  ["Club Master","Carey Dorado/Marrón","3016 902/51",true,"APaQ0STxfXzRtTj7nciAdh2DwKCI26ulO8HaUgyaq62Rl-aPlQGxV-yCUPPbDwZPe3rP3_w_sCbvHMu7HF3nlSyVeMGne0ahxY5MBdc2YOLx32V78sKWk06xmsezfde1Gx2liQu-oQqhBsod8QahkhlqpY2GIGgrV1JxHvntL_nQITbChe8t3YrVgBIuM7ikN2qRdGp2o_b7KRAsclDbmku5laKAQXzo3ZxyeepI"],
+  ["Club Master","Dorado/Verde","3016 W0365A",true,"APaQ0SSNjK8mwtCVqkeBJ1bQEwC9A7ElmP1s46mgbKgbUCGMw2uz63nJqJdL9zZ8KnZWbewU4UujbBVVuWFjIGjxwqvQsj_2tl_UnAjWidUD_CJufBD-tupieFMJRxDcjZr1iuCLhVX8yzs6DQ64_nUJBavJ-wHzm_hgcw4-USG_MXmT_YhLzTCKGur_Lj4soEwwQL7maHPuXn8WJBEV2BPHvqEyIw5060yY3qMfaIo"],
+  ["Club Master","Negro Plateado/Verde","3016 901",true,"APaQ0SS_7x1JhGoP3mrTTnX9wO1ZzfxdyKTbDGJyTqDEo2Rzz9fhS1VNsXj-RNhzOo5ea2HUjwCtLcMxi-yxvdp-NSj2iwBAv749hk6qcnjRkYndxqBxHWE_3vy11RTghPl-k-r0vmch0hwkoqGaLkk9uOexrpjzoLvJuPOnKhI51PmYQyjJs62oVKWRRdzJyIUNCMsysSu4kQNp3XWYteI5ptw3fpSPlCIcJrje"],
+  ["Club Master Blaze","Dorado/Azul Degradé","3576 043/x0",true,"APaQ0SRkL03p1covNHtoUnvo3NgXgCXvZdsTuxsMYAlQNkWtw8r48cw-ZRikR7DqFvuMShco8Q1h6haRwvs4owWLvc4AuearKIeeOBmEs8aUAbQdoeKkjx1EVyOyFcVGiV5wM4KRfZ6V9_0EoR5MyaIoN9Lu3NI_e5pfFEoBihSagHumAul8AP7o5rI2ytgwJn4RY0mQDn6adYzLguboapHB4o8ZSZJibRoAyj_iOTI"],
+  ["Club Master Blaze","Negro/Gris Degradé","3576 153/11",false,"APaQ0SRWYrXtP2Pj8fWbfxL2mAvtXUf_6fJFuKGFu5GZY_HQBKP2oY6UInWTqV6s2LDV08e1YWhgSFYbgmhkX-c62XsUOlUEA9M2S6nnziGxHQjsTBk9hGZQWsIM_jYgyy024Cl3KGPVNs6JgsgXjkQMAV1kOC6HlifZ18Awl3Vl2s41JPRXtg797t6sqCywFCp6r93Rhm-N7MsSqzA69thAJ3PPSAjE2lL17R5B-1M"],
+  ["Club Master Blaze","Rosa/Dorado","3576 9039/V0",true,"APaQ0STEfOyD3w1OSK9g0prwRfikAEoeuTbAGELvv7eNpyJ6K8a0lcR_NlMzLynWCfgIkb3s1UJ_TCYVK8d_FRsUeDlei9uFLeli-tWyRmXgEqtdPDfK4_8ZjgaiGcC5uQQ2yi3NiFEFZ8Dy9sEfKvum7oS_RFJqlyjY8JV9C-tPFJYcCKXrtJAk8hl1DAeroE0Mt5gaQYPqobdZrz8GCeE_ZiR7RdFl965w2o2GcQQ"],
+  ["Mega Club Master","Negro/Verde","0316 901",false,"APaQ0SSVDe6BGJvcC5vuKsLq3F9lba101D8LlNToQEFR8QHW6Zp8SkELWWSqU7YMZidx-7SCgLDqFXwUlrkrDAQobnLZHbnEaNf6UwfR6PSAmp3ptvmu7jAS06MrlYcF-eXjFoL1LLOJjV4vI_B8jnw_JPEorbY0yZFfLEBwSMQjDiQYCZTIw0Wonm6qE-zzzjXq83y8gpty8rRH8-3MEkw1TsUJPQCYhIY0zXSqFCs"],
+  ["Mega Club Master","Carey/Verde","0316 902",true,"APaQ0STnaOStekEK1EiajNPWBO_dBfSYcfOW_TlE0OTczMpEPaDnBzNj98SUYRijZ4_gRnOZ5U9ePNS1R52VZWF2iUEUV32XxTA5q7gy2EV8DI4oWW3tockIXFLU-G9U-syFqlPOgsG_C6mc0fZxGKjmXu3UzYzm2o94qGura1YxROm4kIHB7LP4tkW921e8_G3og8U6TC1Z33e_xUNR3XH4xe2Lu6AkwtZuqq5OZ0Y"],
+  ["Wayfarer Blaze","Blanco/Rosa","4440 6357/X0",true,"APaQ0STI1dvSv4ssr2HKUgRb5uR-_tne4OCwZ1bOcjfQ5JGxErxKf9DH7mCAMA4iBOubexlXlA-bs0y2VAzBePoLeEEOA9VSSwbgR55p1Xmgilhn1efVIQWgDT26RO3HQOtIfaowYi8zrxB0Kuwitz62lGntySp4DA-56lNqaMeY1dmXVXSHfvwfbl6ia-qgMW1SlMK2KV-RbG9L-gy7Yx17C4loikWJ3FvkLJeHUlQ"],
+  ["Wayfarer Blaze","Negro/Verde","4440 601/31",true,"APaQ0STsLnI0oAQQvjP-FoWZ7EgZ4SHgtAxE23i3QTUaOGlK0xo3vatX6tlu2eGrF3LER2xLJqcXxelmR_N5GOR268bb0CWmT9PtTg35AM9ybYL9kYwAUDSKzAHjpBvNx162oRpLAY0t2st8wnGZjWWxKWN1AEdyDDx5jQT4WN7aVBgl7NpSX3ln-ln8BTN0kFPD4aDs0P0_mbMe8T1ujDp9zbAwLNsNBMlGQFUrwhU"],
+  ["Wayfarer Clásico","Carey/Marrón Degradé","2140 902/51",true,"APaQ0STVCFcHiguNIf0EDOMnUtSvI5mLTQtLstIrzg5cqEZuxBy9xXV1ySimd9Bgcn-jjgplmEvOyOWmLG2AF2tF_ZNCEfbXLO8ks-jo593fye4uArfpZtYqgYP0xavSenle44rbFzOf61ZIzHbs0e54LC7JEHMn7R1Z-vU0PRKM6V_vfz_yaUj61Fy0wcmSmbq-8XwsN3z5EPaf7kaSM1TNFxJunRhr_oGBL8d4u9M"],
+  ["Wayfarer Clásico","Negro/Verde","2140 901",true,"APaQ0SRA9RVHdahoZb7KBXyQEAhnX8Lzt1qmfn8Ya9VxlKXnpDad_CUOP9gfWcCqkwCqVBg44jHu6GGrmF9qYujO1s3ojZyYt_nxYDm5gEJE56hUupa70tMXHHdMV5V6PrRNXbq_OS2BaU4ikPShmXCAq_mSMcIFxfBQpeYLu1KPHwy-2BYIrVU05qvfjI6iPYejCJScxsK_IMBK4xhHEZ3Xtrq3RMC2vtLtksVB"],
+  ["Wayfarer Polarizado","Negro/Verde","2140 901/58",true,"APaQ0SThq8Y4Kh07PB-L2PgKQF9BdnrgLIjWbLME1TXEbSZyGO2fuUnwGr8zD5x76jPQCnIaRmCk5vYrB3KfqR99nNZ1V76r7jDJwdJCijnzscYlMx_KTeosN9oLED8-dToM-WvmwLKhtbznGH3C7HVtvmRvM7lUEYB6EgxKrIrOqFo5QPZehgWw0euSgtO7FRWFsXNQLNeLShyTdeYv0kUQSOv3ULXZ7P4pyA"],
+  ["Mega Wayfarer","Carey","4840s 1402/51",true,"APaQ0SQeJmE4reZ7cy9KWz1_S5kqtcC7Kv8QmXLuDm7isnCnGAPcbdyWMxRMis90ERPX5Pffs-LzH47utnq-s0kbcTt-oQ5Aj9mj3cl623rZfCNz39LaP6Ur123opLXEbNiZ_Q8BYY7lNDrlttmpyVmFnHi-K5K2adANHGUyeHAB4SrsDSfZ_JMcAAEq7Ddr4t-3cmdC7XokPLrPa5sSdxGmwyjyNQrMfm80JxatNeU"],
+  ["Mega Wayfarer","Negro/Verde","4840s 901/31",true,"APaQ0SRPvdL9RYr54y3FlQzOaidonMYlAxCKGozby9mZ5oN0TiKk9lXtRuBlGn894tQ01jjEADAtzmIVKuXR76WURYH7ecghu-qggEVyNHNQPl33OM1gRWf9lm-dU_q6P6NEdOlmKRDyJl4l6clo_lyEVOM31uSzQJpstvk1ixDaJmBLcj_RQwQWsleB6w2H8AsAznD0tqSB_qOkaHOYoNXHLbhTrZwcLBR-6ylkXHg"],
+  ["Aviador Ferrari","Dorado/Verde","8313-M F008/71",true,"APaQ0SSvKqVmq50G9AHTm9vu7H9RAamlWFLIXFgPharOT04aa0JSbaq5MHBZ7xfBVhW3NCRFgBIyZcMu5aQO39WqqlNDhTP0pGVAnPBdXgNTeKHIqd4gGCINaTUCA6SrT_yLdSZznJTiQmmn7Is5j05n1A3_Ht7l9oyezDGuwNMnBR-E9ZBACSO__GKT0kA2e-B4yYh2E1H50slwR5lgwo--V0G93g5gb0dQodBi"],
+  ["Aviador Ferrari","Negro/Gris Degradé","8313-MF F002/32",true,"APaQ0SRWl2v2YgtxlROdpTZWTHCcMpMxWujfzJ0gelahLsckDEH2UzsquZd-bBYrX96DHni9N5GC8QMVqEGR_P9DxOFyUsEQ6Nhk5sO64RsguYrQQ-px1_nAXv2jMXeSdmDzCcLuDyu5XBeNTSA6S_BvHFXJKsclUEl5L6Ddf7tZ5lewVWSRye2ZCRlF8T60XfHVqXhoamtXIwinalFjLqBscgTXT28Al6wYYm0n"],
+  ["Aviador Ferrari","Dorado/Marrón Degradé","8313-MF F008/13",true,"APaQ0SSM9cyna9wlYm-nSbvbFoJO78u_Ymeb2Vggq2PcBp0kOmEFMCahTe2n4svfOesmxIdGeoRc1LZiwetl98Yvd7FNYlmtMIHg-b3B3zh6lSzDIUYEjIKucHApQDYN2At9aF2aOrC4BgA3FoJ9IxVmRSD4KbzHfazTuzhgnahWADfIH3Ez-dXBnN5q8YucI-3E_xgvDeOjmCE1fDdE3WR5gUfWKRG3O9ezqmdpMio"],
+  ["Aviador Ferrari","Negro/Azul Espejado","8313-MF F003/H",true,"APaQ0SQoeKlT-x65HbhwT6KZty5tdtOQIFL3Kr1lj1ziAlAB2mYME05Wt2WlYojPQq8bTtvpnNiuEVX-zOSR6_gtbJF9P40zJSAAigO3lHrZ0wT45fLZBTgar4GbkUeT93ADldt-8C4khFWHaGO0XpXVAv9rSmp-dbNhFWynf9ezrACsSj9WQfGXw0iUHeM68PyAAZZxu55iqezDozUCVLeA3TpAV_VpkXlErCi7kdQ"],
+  ["Scuderia Collection","Dorado/Carey Verde","3674-M F031/71",true,"APaQ0SRzS8bKgvSwgjtgXisMtHI8q_KLzXl47qrMYPxsJDFWhq_qp4u8kHnXJi52T6HM_XaTqbG6FZrty_zvysgvAKiah9TXXyKlgTo7pm5R10qoG1E5GiMmxWc0-9LyMksqL_HS03uYKt-htMG9zys3JLNevikHQcQkOCpD5Q_3BVelZoq8EeQysq5eMy3s3H8J10qoWrutDGAkZoCEHNRU9-JQo7Y1uIAp5plOQkU"],
+  ["Scuderia Collection","Negro/Verde","3674-M F028/71",true,"APaQ0SSjUDRtuReP8iM-0tkrgyqnJxQxduqQ51aFrehvfXcdqyRSshCmJe3LKUdnaqzba8CkI4TfClMc2gveWIIaWB1s6oV6r1W41sZKNUGbfqqq0qjLleQMIbbxH3TY5p-NDebRiUcgLxnPyuRYMgm-t60uw3KuAa53nHW9WoM21x0dSwaWgqqodiiNSnmVnB3DaqIbJHXiyzQhPYpwX4lsoS5HVPCxqUesRmgy"],
+  ["Cats Ferrari","Negro/Verde","4125 MF F601/87",true,"APaQ0SSt4A_0ZPfNaJaHUsVO8KOg5RE-Y65h6o19bWcp7XekZTs2ICz2LdBUPBE42wVZU5O4zwL97p2NL4l5N-5hcBwROzbHleAMfpQS1r7D8HMeDLJUumN73FIZ7zh-BZmV35-pU2jxgWjghD6_jNoOEM-JE8OwnSahnPLd0H3Kro4IGMvcRrrFKScIbSZY2gwKrfSwBqMQgIgLZR4PcX5mSg26o_tBLNJJREsYO6U"],
+  ["Cats Ferrari","Carey/Marrón Degradé","4125 MF F668/13",true,"APaQ0STw00sWXXXFqdjcgePbKKhkAxTTp0QqBmDvFlF12ZUEZ7d70qp-ldandlycPryejWgfdZV4wTgXI5InN7ve_ihaYfp7GdJHBudGiLVbStGRj-qWAwZOt2vcza9ZtonLzlUHyN8maAlRfLgsRziUcRBVWl6paFpMutEtVWSjkHXuY-gSdg8rwfgI0U7JkuZ3Vs51dROH3fvkwbFrA3_f8kQkL0Qq_e9MSvR_iw"],
+];
+
+function imgUrl(id){return`https://lh3.googleusercontent.com/sitesv/${id}=w400`}
+const lineas=[...new Set(P.map(p=>p[0]))];
+
+function init(){
+  const s=document.getElementById('fLinea');
+  lineas.forEach(l=>{const o=document.createElement('option');o.value=l;o.textContent=l;s.appendChild(o)});
+  render();
+}
+
+function render(){
+  const fl=document.getElementById('fLinea').value;
+  const fs=document.getElementById('fStock').value;
+  const f=P.filter(p=>(!fl||p[0]===fl)&&(!fs||(fs==='ok'&&p[3])||(fs==='no'&&!p[3])));
+  const t=f.length, e=f.filter(p=>p[3]).length;
+  document.getElementById('stats').innerHTML=
+    `<span><b>${t}</b> modelos</span><span class="ok"><b>${e}</b> en stock ✅</span><span class="no"><b>${t-e}</b> sin stock ❌</span>`;
+  const g={};
+  f.forEach(p=>{(g[p[0]]=g[p[0]]||[]).push(p)});
+  const cat=document.getElementById('cat');
+  cat.innerHTML='';
+  Object.entries(g).forEach(([l,items])=>{
+    const es=items.filter(i=>i[3]).length;
+    const sec=document.createElement('div');
+    sec.className='sec';
+    sec.innerHTML=`<div class="sec-hdr">${l.toUpperCase()} <span>${es}/${items.length} en stock</span></div>`;
+    const grid=document.createElement('div');
+    grid.className='grid';
+    items.forEach(([,n,c,s,id])=>{
+      const card=document.createElement('div');
+      card.className='card'+(s?'':' agotado');
+      card.innerHTML=`<img src="${imgUrl(id)}" alt="${n}" loading="lazy" onerror="this.style.background='#E8DCC8';this.style.minHeight='130px'">
+        <div class="card-body">
+          <div class="card-nombre">${n}</div>
+          <div class="card-cod">${c}</div>
+          <span class="badge ${s?'badge-ok':'badge-no'}">${s?'✅ En stock':'❌ Sin stock'}</span>
+        </div>`;
+      grid.appendChild(card);
+    });
+    sec.appendChild(grid);
+    cat.appendChild(sec);
+  });
+}
+init();
+</script>
+</body>
+</html>
